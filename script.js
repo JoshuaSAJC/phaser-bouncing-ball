@@ -39,6 +39,6 @@ function update() {
     }
 
     if (ball.x >= WIDTH - ballSize / 2 || ball.x <= ballSize / 2) {
-        xspeed *= -1;
+        xspeed *= -2;
     }
 }
