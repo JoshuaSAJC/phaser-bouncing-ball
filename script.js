@@ -16,8 +16,8 @@ const game = new Phaser.Game(config);
 
 let ball;
 let ballSize = 80;
-let yspeed = 0.5;
-let xspeed = 1.0;
+let yspeed = 3.0;
+let xspeed = 3.0;
 
 function preload() {
     this.load.image("ball", "assets/ball.png"); // watch out for case sensitivity
@@ -39,6 +39,6 @@ function update() {
     }
 
     if (ball.x >= WIDTH - ballSize / 2 || ball.x <= ballSize / 2) {
-        xspeed *= -2;
+        xspeed *= -1;
     }
 }
